@@ -1,0 +1,17 @@
+body {
+    font-family: Calibri;
+    padding: 20px;
+    background:url("../images/trees_bg.jpg") no-repeat fixed;
+  }
+
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }

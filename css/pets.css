@@ -1,0 +1,98 @@
+.waste button{
+    margin-left:50px;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 20px;
+    background-image:url(..\\images\\companion.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+#description{
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: -20px -20px;
+    margin-bottom: 20px;
+    padding:30px 20px;
+    color: white;
+}
+
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+.img1 {
+    width:100%;
+    padding: 20px;
+    background-image: url(..\\images\\pet1.jpg);
+    margin:auto auto;
+}
+
+.img2 {
+    width: 100%;
+    padding: 20px;
+    background-image: url(..\\images\\dog3.jpg);
+    background-size: cover;
+    margin:auto auto;
+    
+}
+
+.leftcolumn .card {
+    border-radius:50px;
+    margin-left:50px;
+    background-color:rgba(223, 223, 221, 0.753);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.container  a{
+    margin-right:-50px;
+    margin-left:160px;
+    margin-top:10px;
+    padding:10px;
+    width:200px;
+}
+
+.name
+{ 
+    background-color:rgba(223, 223, 221, 0.753);
+    border-radius: 5px;
+    padding:5px 2px;
+    border-bottom: 3px solid black;
+}
+.name div
+{
+    display: inline-block;
+}
+.nav{
+    width:"inherit";
+    height:50px;
+    background-color:rgb(15, 1, 1);
+    margin:-20px;
+}
+
+.nav a{
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 15px 42px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav a:hover{
+    color:rgb(42, 1, 80);
+    background-color:rgb(210, 229, 255);
+    border: 1px solid rgb(42, 1, 80);
+    text-decoration: none;
+    margin-top: -2px;
+    padding: 17px 42px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+}

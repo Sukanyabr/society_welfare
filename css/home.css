@@ -1,0 +1,253 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media only screen and (max-width: 700px) {
+    #slideshow 
+    { 
+        display:none;
+    }
+    .nav
+    {
+        display: none;
+    }
+    body{
+        /* background-image:url(..\\images\\phonebg.jpg); */
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+}
+
+body{
+    /* background-image: url("../images/bg.jpg"); */
+    /* background-color: rgba(218, 218, 218, 0.932); */
+    background-image:url(..\\images\\homebg.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 20px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.nav{
+    width:100%;
+    height:50px;
+    background-color:rgb(15, 1, 1);
+    /* display:inline-block; */
+
+}
+
+.nav a{
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 15px 2.2%;
+  /* display:none; */
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav a:hover{
+    color:rgb(42, 1, 80);
+    background-color:rgb(210, 229, 255);
+    border: 1px solid rgb(42, 1, 80);
+    padding: 14px 28px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+}
+
+.topbar{
+  width:100%;
+  height:50px;
+  margin-bottom: -4px;
+  background-color:rgb(185, 182, 182);
+  display:inline-block;
+
+}
+
+.topbar #menuicon{
+    font-size:30px;
+    cursor:pointer;
+    float:right;
+    margin-right: 2%;
+    margin-top: 0.25%;
+}
+
+.topbar #pic{
+    float:left;
+    margin:0px;
+    border-bottom :1px solid black;
+}
+
+
+.topbar a[id = "popular"]
+{
+    float:left;
+    margin-right: 40px;
+    margin-left: 40px;
+    font-size:17px; 
+    vertical-align: 15px;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    margin-top: 5px;
+}
+.topbar a[id = "popular"]:hover
+{
+    border: solid 1px rgb(42, 1, 80);
+    border-radius: 10px;
+}
+
+/* .topbar #login
+{
+  float:right;
+  margin-right:50px;
+  height: 40px;
+  width: 40px;
+  margin-top: 6px;
+} */
+
+.topbar form
+{
+    float:right;
+}
+
+.topbar input[type=text]
+{
+    padding:6px;
+    margin-top:8px;
+    font-size:17px;
+    border:none;
+    border-radius: 6px;
+    width: 500px;
+}
+
+.topbar button
+{
+    float:right;
+    padding:6px;
+    margin-top:8px;
+    margin-right:300px;
+    margin-left: 4px;
+    font-size:17px;
+    color: white;
+    border:none;
+    border-radius: 6px;
+    cursor:pointer;
+    background-color: rgb(30, 0, 85);
+}
+
+.topbar button:hover
+{
+    background-color:rgb(210, 229, 255);
+    color:black;
+}
+
+#login {
+    cursor: pointer;
+  }
+  
+.dropdown 
+{
+    position: relative;
+    float:right;
+    margin-right:50px;
+    height: 30px;
+    width: 30px;
+    margin-top: 6px;
+}
+  
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    right: -50px;
+    background-color: rgb(210, 229, 255);
+    min-width: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: solid 1px black;
+}
+  
+.dropdown-content a 
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+  
+.dropdown-content a:hover {background-color:  rgb(188, 205, 228)}
+  
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+
+#slideshow 
+{ 
+    position: relative;
+}
+
+#slideshow > #imgcard 
+{ 
+    position: absolute; 
+    width: 97%;
+    margin-top: 20px;
+    padding: 55px 20px;
+    background-color: rgba(0, 0, 0, 0.801);
+    float:left;
+}
+#slideshow img 
+{
+    position: relative;
+    float: left;
+    width:58%; 
+    height: 400px;
+    border-color: black;
+}
+
+#slideshow #text
+{
+    font-size: 30px;
+    width: 36%;
+    position: relative;
+    float: inherit;
+    color: white;
+    padding-top: 20px;
+}
