@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <title>Login</title>
+        <style>
+            body{
+            margin:0;
+            padding:0;
+            background-image: url(.\\images\\image.jpg);
+            background-size:cover;
+            background-position: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+           }
+
+           .logincard{
+               width:320px;
+               height:420px;
+               background:rgba(20, 19, 19, 0.5);
+               color:#fff;
+               margin-top:200;
+               margin-left:600;
+               position:absolute;
+               /* transform:translate(-50%,-50%); */
+               box-sizing:border-box;
+               padding:70px 30px;
+           }
+           .image{
+               width:100px;
+               height:100px;
+               border-radius:50%;
+               position:absolute;
+               top:-50px;
+               margin-left:25%;
+               /* left:calc(50% - 50px); */
+               
+           }
+
+           h1{
+               margin:0;
+               padding:0 0 20px;
+               text-align:center;
+               font-size:22px;
+           }
+
+           .logincard p{
+               margin:0;
+               padding:0;
+               font-weight:bold;
+           }
+
+           .logincard input{
+               width:100%;
+               margin-bottom: 10px;
+           }
+
+           .logincard input[type="text"],input[type="password"]
+           {
+               border:none;
+               border-bottom:1px solid #fff;
+               background:transparent;
+               outline:none;
+               height:40px;
+               color:#fff;
+               font-size:16px;
+           }
+
+           .logincard input[type="submit"]
+           {
+               border:none;
+               outline:none;
+               height:40px;
+                background:#2a8ed4;
+                color:#fff;
+                font-size:18px;
+                border-radius:20px;
+           }
+
+           .logincard input[type="submit"]:hover
+           {
+               cursor:pointer;
+               background:rgb(125, 154, 173);
+               color:#000;
+           }
+
+           .logincard a{
+               text-decoration: none;
+               font-size:14px;
+               color:#fff;
+           }
+           
+           .logincard a:hover{
+               color:rgb(7, 106, 136);
+           }
+           
+           .nav{
+    width:100%;
+    height:50px;
+    background-color:rgb(15, 1, 1); 
+}
+
+.nav a{
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 17px 39px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav a:hover{
+    color:rgb(42, 1, 80);
+    background-color:rgb(210, 229, 255);
+    border: 1px solid rgb(42, 1, 80);
+    margin-top: -2px;
+    padding: 17px 42px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+}
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+                    <a href="home.html" style="padding-left: 33px;">Home</a></li>
+                    <a href="waste.html">Waste Management</a>
+                    <a href="plantation.html">Plantation Drive</a>
+                    <a href="leftover.html">Leftover Food</a>
+                    <a href="pet.html">Pet Adoption</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#" style="padding-right: 31px;">Professional Help</a>
+              </div>
+        <div class="logincard">
+            <img src=".\images\login1.png" class="image">
+            <h1>Login Here</h1>
+        <form name="loginform" action="" method = "POST">
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="password" minlength="6" maxlength="15" placeholder="Enter Password"><br>
+            <div id="incorrect" style="color: red;"></div>
+            <div id="correct" style="color: green;"></div><br><br>
+            <input type="submit" name="submit" value="Login" onclick="loadXMLDoc()"><br><br>
+            Don't have an account?<a href="signup.html"> Sign up</a>
+        </form>
+        </div>
+        <script>
+            var message,code;
+            function loadXMLDoc(){
+                var http = new XMLHttpRequest();
+                var url = '..\\login.php';
+                var params = 'username='+document.forms["loginform"]["username"].value+'&password='+document.forms["loginform"]["password"].value;
+                http.open('POST', url, true);
+                http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                http.onreadystatechange = function() {
+                    if(http.readyState == 4 && http.status == 200) {
+                        message = http.responseText.split("/")[0];
+                        code = http.responseText.split("/")[1];
+                        if(code == "0"){
+                        document.getElementById("incorrect").innerHTML=message;
+                        }
+                        else{
+                        document.getElementById("correct").innerHTML=message;
+                        window.location.replace("dashboard.html");
+                        }
+                    }
+                }
+                http.send(params);
+            }    
+        </script>
+    </body>
+</html>

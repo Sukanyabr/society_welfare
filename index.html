@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="./css/home.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script type = "text/javascript" src = "./scripts/homepage.js"></script>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="waste.html">Waste Management</a>
+        <a href="plantation.html">Plantation Drive</a>
+        <a href="leftover.html">Leftover Food</a>
+        <a href="pet.html">Pet Adoption</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="prof.html">Professional Help</a>
+      </div>
+      
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "300px";
+      document.getElementById("mySidenav").style.right = "0";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+  <div class="topbar">
+      <a href="./index.html"><img id="pic" src=".\\images\\together.png" height="50px" style="margin-left:10px"></a>
+      <a href="#" id="popular">Popular <img src=".\\images\\lit.png" style = "height: 25px; width: 25px; vertical-align: bottom;"></a>
+      <div id = "menuicon" onclick="openNav()">&#9776;</div>
+      <div class="dropdown">
+        <a href="#"><img id="login" src=".\\images\\login.png"></a>
+        <div class="dropdown-content">
+        <a href="loginpage.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="dashboard.html">Dashboard</a>
+        </div>
+        
+      </div>
+      <!-- <form>
+        <input type="text" placeholder="Search..">
+        <button>Search</button>
+      </form> -->
+  </div>
+
+<br>
+  <div class="nav">
+        <a href="index.html" style="padding-left: 30px;">Home</a>
+        <a href="waste.html">Waste Management</a>
+        <a href="plantation.html">Plantation Drive</a>
+        <a href="leftover.html">Leftover Food</a>
+        <a href="pet.html">Pet Adoption</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="prof.html" style="padding-right: 30px;">Professional Help</a>
+  </div>
+  <div id="slideshow">
+    <div id="imgcard">
+      <img src=".\\images\\planting1.jpg" style="float: left; margin-right: 20px;">
+      <div id="text">
+        <p>
+          <h4>Trees are the root of existence</h4>
+          <br>
+          Our volunteers planting trees near a stream.
+        </p>
+      </div>
+    </div>
+    <div id="imgcard">
+        <div id="text">
+            <p>
+              <h4>Making the world a cleaner place!</h4>
+              <br>
+              Our volunteers in Bangalore <br> on a cleaning mission
+              
+            </p>
+        </div>
+      <img src=".\\images\\cleaning1.jpg" style="float: right;">
+    </div>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+
+body
+{
+  background-image: url(.\\images\\forest1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.card
+{
+  background-color: rgba(43, 43, 40, 0.753);
+  color:white;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:30px;
+  border:1px solid;
+  margin:100px 350px;
+  /* box-shadow:5px 10px 18px #888888; */
+}
+
+input[type = text]:focus{
+  border-color: yellow;
+}
+.nav{
+    width:100%;
+    height:50px;
+    background-color:rgb(15, 1, 1);
+    
+
+}
+
+.nav a{
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 17px 42px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav a:hover{
+    color:rgb(42, 1, 80);
+    background-color:rgb(210, 229, 255);
+    border: 1px solid rgb(42, 1, 80);
+    margin-top: -2px;
+    padding: 17px 42px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+    <div class="nav">
+        <a href="index.html" style="padding-left: 33px;">Home</a></li>
+        <a href="waste.html">Waste Management</a>
+        <a href="plantation.html">Plantation Drive</a>
+        <a href="leftover.html">Leftover Food</a>
+        <a href="pet.html">Pet Adoption</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="#" style="padding-right: 31px;">Professional Help</a>
+  </div>
+  <div class="card">
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <body style="font-family:Verdana, Geneva, Tahoma, sans-serif" ></body>
+        Title:<input type="text"name="title">
+        <br>
+        <br>
+        <input type="file" name="_file_"><br><br>
+        Comments :<br/>
+       <textarea rows = "5" cols="50" name="comments"></textarea><br><br>
+       Fix rewards:<br>
+       [between 100 to 1000]
+       <input type="number" name="reward">
+</form>
+        <br>
+        <div class=container>
+  <button type="submit" class="btn btn-success" name="submit" style = "width: 200px;"  button onclick="myFunction()">Submit</button>
+  <button type="reset" class="btn btn-success" name="Reset" style = "width: 200px;" >Reset </button>
+  <a href="plantation.html"  class="btn btn-success" role="button"style="width:200px;" >Back</a>
+</div>
+<script>
+function myFunction() {
+  alert("your post has been uploaded");
+}
+</script>
+</body>
+</html>

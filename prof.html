@@ -1,0 +1,143 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <title>Professional help</title>
+        <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-image: url(.\\images\\laptopbg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .card11
+        {
+            float:left;
+            width:20%;
+            height: 30%;
+            border:2px solid black;
+            padding:70px 70px;
+            margin:10px 10px;
+            color:white;
+        }
+        
+        .card1
+        {
+            float:left;
+            width:20%;
+            height: 30%;
+            border:2px solid black;
+            padding:70px 70px;
+            margin:10px 10px;
+            color:white;
+        }
+        .card2
+        {
+            margin-top:300px;
+            width:20%;
+            height: 30%;
+            border:2px solid black;
+            padding:70px 100px;
+            margin-left:10px;
+            color:white;
+        }
+        .card3
+        {
+            margin-top:-225px;
+            width:20%;
+            height: 30%;
+            border:2px solid black;
+            padding:70px 100px;
+            margin-left:340px;
+            color:white;
+        }
+        
+        #desk
+        {
+            float:right;
+            margin-top:-550px;
+            margin-right:50px;
+            padding:40px;
+            border:1px solid black;
+            width:30%;
+            height:80%;
+        }
+
+.nav{
+    width:100%;
+    height:50px;
+    background-color:rgb(15, 1, 1);
+}
+
+.nav a{
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 17px 42px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav a:hover{
+    color:rgb(42, 1, 80);
+    background-color:rgb(210, 229, 255);
+    border: 1px solid rgb(42, 1, 80);
+    margin-top: -2px;
+    height:52px;
+    padding: 17px 42px;
+}
+
+        </style>
+    </head>
+    <body>
+            <div class="nav" style="width:inherit";>
+                    <a href="index.html" style="padding-left: 33px;">Home</a></li>
+                    <a href="waste.html">Waste Management</a>
+                    <a href="plantation.html">Plantation Drive</a>
+                    <a href="leftover.html">Leftover Food</a>
+                    <a href="pet.html">Pet Adoption</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="prof.html" style="padding-right: 31px;">Professional Help</a>
+              </div>
+        <h1 id="head">
+            WE ARE HERE TO HELP YOU
+        </h1>
+        
+        <div class="card11">
+           
+            <b>PLUMBER</b>
+            <p>Contact:7895634589</p>
+        </div>
+        <div class="card1">
+                <b>GARDNER</b>
+                <p>Contact:8907652431</p>
+        </div>
+        <div class="card2">
+            <b>Truck Driver</b>
+            <p>8907563892</p>
+        </div>
+        <div class="card3">
+                <b>Nursery</b>
+                <p>9876587654</p>
+            </div>
+        <div id="desk">
+            <form>
+                <h1>Any Queries?</h1>
+                <b>Name:</b><br><input type="text" name="uname"><br><br>
+                <b>About:</b><br><input type="text" name="about"><br><br>
+                <b>Description:</b><br><textarea rows="10" cols="40"></textarea><br><br>
+                <button type="submit" class="btn btn-success" name="submit"   button onclick="myFunction()">Submit</button>
+                <button type="reset" class="btn btn-success" name="reset" >Reset </button>
+            </form>
+        </div>
+        <script>
+        function myFunction()
+        {
+            alert("Your query has been submitted.We will reach back to you soon.")
+        }
+        </script>
+    </body>
+</html>
